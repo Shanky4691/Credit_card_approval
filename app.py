@@ -22,13 +22,13 @@ def predict():
     For rendering results on HTML GUI
     '''
     Gender = (request.form['Gender'])
-    Age = (request.form['Age'])
-    Debt = (request.form['Debt'])
+    Age = float(request.form['Age'])
+    Debt = float(request.form['Debt'])
     Married = (request.form['Married'])
     BankCustomer = (request.form['BankCustomer'])
     EducationLevel = (request.form['EducationLevel'])
     Ethnicity = (request.form['Ethnicity'])
-    YearsEmployed = (request.form['YearsEmployed'])
+    YearsEmployed = float(request.form['YearsEmployed'])
     PriorDefault = (request.form['PriorDefault'])
     CreditScoreAge = (request.form['CreditScore'])
     DriversLicense = (request.form['DriversLicense'])
@@ -39,8 +39,9 @@ def predict():
     data = [[Gender, Age, Debt, Married, BankCustomer, EducationLevel,Ethnicity, YearsEmployed,PriorDefault,CreditScoreAge,
     DriversLicense,Citizen,Income]]
     prediction = model.predict(data)
-
+    
     prediction = model.predict(data)
+
     if prediction == 0:
         return render_template('index.html', prediction_text='Eligible for CC')
 
