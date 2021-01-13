@@ -30,8 +30,8 @@ def predict():
     Ethnicity = (request.form['Ethnicity'])
     YearsEmployed = float(request.form['YearsEmployed'])
     PriorDefault = (request.form['PriorDefault'])
+    Employed = (request.form['Employed'])
     CreditScoreAge = (request.form['CreditScore'])
-    DriversLicense = (request.form['DriversLicense'])
     Citizen = (request.form['Citizen'])
     Income = (request.form['Income'])
 
