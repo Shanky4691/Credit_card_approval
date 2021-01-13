@@ -36,8 +36,8 @@ def predict():
     Income = (request.form['Income'])
 
 
-    data = [[Gender, Age, Debt, Married, BankCustomer, EducationLevel,Ethnicity, YearsEmployed,PriorDefault,CreditScoreAge,
-    DriversLicense,Citizen,Income]]
+    data = [[Gender, Age, Debt, Married, BankCustomer, EducationLevel,Ethnicity, YearsEmployed,PriorDefault,Employed,
+    CreditScore,Citizen,Income]]
     prediction = model.predict(data)
     
     prediction = model.predict(data)
