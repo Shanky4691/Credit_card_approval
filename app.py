@@ -31,7 +31,7 @@ def predict():
     YearsEmployed = float(request.form['YearsEmployed'])
     PriorDefault = (request.form['PriorDefault'])
     Employed = (request.form['Employed'])
-    CreditScoreAge = (request.form['CreditScore'])
+    CreditScore = (request.form['CreditScore'])
     Citizen = (request.form['Citizen'])
     Income = (request.form['Income'])
 
