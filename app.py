@@ -22,13 +22,13 @@ def predict():
     For rendering results on HTML GUI
     '''
     Gender = (request.form['Gender'])
-    Age = float(request.form['Age'])
-    Debt = float(request.form['Debt'])
+    Age = (request.form['Age'])
+    Debt = (request.form['Debt'])
     Married = (request.form['Married'])
     BankCustomer = (request.form['BankCustomer'])
     EducationLevel = (request.form['EducationLevel'])
     Ethnicity = (request.form['Ethnicity'])
-    YearsEmployed = float(request.form['YearsEmployed'])
+    YearsEmployed = (request.form['YearsEmployed'])
     PriorDefault = (request.form['PriorDefault'])
     Employed = (request.form['Employed'])
     CreditScore = (request.form['CreditScore'])
